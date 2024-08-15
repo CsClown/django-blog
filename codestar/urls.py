@@ -19,7 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('summernote', include('django_summernote.urls')),
-    
-    # path("codestar/", include("blog.urls"), name="blog-urls"),
-    # path('admin/', admin.site.urls),
+    path("", include("blog.urls"), name="blog-urls"),
+    path('admin/', admin.site.urls),
 ]
